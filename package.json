@@ -1,0 +1,23 @@
+{
+  "name": "learn_wx_miniapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "weui-miniprogram": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mclxly/learn_wx_miniapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mclxly/learn_wx_miniapp/issues"
+  },
+  "homepage": "https://github.com/mclxly/learn_wx_miniapp#readme"
+}

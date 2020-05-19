@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container"  data-weui-theme="dark">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -10,4 +10,12 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+
+  <button loading="{{true}}">操作</button>
+
+  <mp-dialog title="test" show="{{false}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+  </mp-dialog>
+
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
 </view>

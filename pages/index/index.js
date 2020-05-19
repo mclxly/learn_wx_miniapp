@@ -1,8 +1,12 @@
 //index.js
+var myBehavior1 = require('../../behaviors/behavior1.js')
+var myBehavior2 = require('../../behaviors/behavior2.js')
+
 //获取应用实例
 const app = getApp()
 
-Page({
+Component({
+  behaviors: [myBehavior1, myBehavior2],
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -14,6 +18,12 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '自定义转发标题',
+      path: '/page/user?id=123'
+    }
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
